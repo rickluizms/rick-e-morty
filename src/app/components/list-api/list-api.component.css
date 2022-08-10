@@ -1,0 +1,108 @@
+button{
+    left: 43%;
+    bottom: 21%;
+    font-family: var(--font-action);
+    color: rgb(255, 255, 255);
+    font-size: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background: #000000; 
+    background: -webkit-linear-gradient(to right, #434343, #000000); 
+    background: linear-gradient(to right, #434343, #000000);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: moveBanner 2s;
+    transition: color 0.9s;
+}
+
+button:hover{
+    color: black;
+}
+
+.projetos{           /* CARDS */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-wrap: wrap;
+    margin: .3rem;
+    width: 15rem;
+    height: 21rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.card-img-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+    border-radius: .3rem;
+    
+}
+
+.card-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: opacity .3s;
+
+}
+
+.card:hover .card-img-wrapper img{
+    opacity: .3;
+}
+
+.card-info{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    visibility: visible;
+    padding: .5rem;
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .4);
+    transition: all 0.3s;
+}
+
+.card-info h2{
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+}
+
+.card-info h3{
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: .5rem;
+}
+
+.card-info p{
+    font-family: var(--font-secundary);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.card-info button{
+    left: 0px;
+    font-size: .6rem;
+    color: #eee;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4); 
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+
+}

@@ -1,0 +1,23 @@
+<section class="py-1.5 text-center container">
+    <div class="row py-lg-.5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light" style="color: #fff;">Personagens</h1>
+        <p class="lead text-muted"></p>
+        <p>
+        </p>
+      </div>
+    </div>
+</section>
+  
+<div class="projetos">
+    <div class="card" *ngFor="let p of personagens">
+        <div class="card-img-wrapper">
+            <img src="{{p.image}}" alt="" />
+        </div>
+        <div class="card-info">
+            <h2>{{p.name}}</h2>
+            <h3>{{p.species}}</h3>
+            <button>{{p.status}}</button>
+        </div>
+    </div>
+</div>
